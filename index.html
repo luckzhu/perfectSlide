@@ -11,28 +11,48 @@
 
 <body>
     <div class="container">
+        <div id="head">
+
+            <h1>Apple-like Gallery<br><b>Slideshow</b></h1>
+
+            <h2>View the original tutorial »</h2>
+        </div>
+
+        <div class="wrapper">
         <div class="window">
             <div id="slides" class="images">
-                <img src="./images/imac.jpg" alt="图片" >
+                <img src="./images/imac.jpg" alt="图片">
                 <img src="./images/info.jpg" alt="图片">
                 <img src="./images/iphone.jpg" alt="图片">
                 <img src="./images/macbook.jpg" alt="图片">
             </div>
+            <div id="controls" style="text-align:center;">
+                <button id="previous"> <img src="./images/left.png" alt=""></button>
+                <button id="next"><img src="./images/right.png" alt=""></button>
+            </div>
         </div>
-        <div id="controls" style="text-align:center;">
-            <button id="previous">上一张</button>
-            <button id="next">下一张</button>
-        </div>
-        <div id=buttonWrapper style="text-align:center;">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
+
+        <div id="buttonWrapper" class="buttonWrapper">
+            <button> <img src="./images/thumb_imac.png" alt=""> </button>
+            <button> <img src="./images/thumb_about.png" alt=""> </button>
+            <button> <img src="./images/thumb_iphone.png" alt=""> </button>
+            <button> <img src="./images/thumb_macbook.png" alt=""> </button>
         </div>
     </div>
 
-    <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <p>This is a tutorialzine demo. View the original tutorial</a> to read and download the source files.</p>
+        <p>The gallery features artwork from codenamebender</a></p>
+
+
+
+
+
+    </div>
+
+
+
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./main.js"></script>
 
 </body>
 

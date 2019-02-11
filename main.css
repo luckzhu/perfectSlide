@@ -1,20 +1,104 @@
+*{margin:0;padding:0;}
+*{box-sizing: border-box;}
+body {
+    background-color: #f2f2f2;
+}
+h1 {
+    font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size: 42px;
+    font-weight: normal;
+    padding: 35px;
+}
+
+h2 {
+    font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    position: relative;
+    top: -19px;
+}
+
+p {
+    font-size: 10px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#head {
+    text-align: center;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
+.window{
+  width: 920px;
+  height: 400px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 3px #AAAAAA;
+  position: relative;
+}
+.images{
+  display: flex;
+  transition: all 1s;
+}
+.images > img{
+  width: 100%;
+}
 
-
-.window {
+.buttonWrapper{
     width: 920px;
-    height: 400px;
+    height: 45px;
+    text-align:center;
+    line-height: 45px;
+    background-color: rgb(221, 221, 221);
     overflow: hidden;
+    box-shadow: 0 0 3px #AAAAAA;
+    list-style-type: disc;
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 1px;
 }
 
+.buttonWrapper > button {
+    width: 60px;
+    height: 45px;
+    border: none;
+    text-align: center;
+    
+}
 
-.container > .images {
-    display: flex;
+#controls > #previous {
+    position: absolute;
+    left: 0;
+    top: 42%;
 
+}
+#controls > button {
+    background-color: transparent;
+    border: none;
+}
+#controls > button > img {
+    width: 80px;
+    height:80px;
+    opacity: 0.1;
+}
+
+:focus{
+    outline: 0;
+}
+
+#controls > #next {
+    position: absolute;
+    right: 0;
+    top: 42%;
 }
