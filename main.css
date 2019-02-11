@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.window {
+    width: 920px;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+.container > .images {
+    display: flex;
+
+}
